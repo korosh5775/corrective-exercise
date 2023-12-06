@@ -5,9 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import java.util.*
 
-/**
- * Created by BideMajnoon on 27-Jun-18.
- */
+
 @Suppress("DEPRECATION")
 class ViewPagerAdapter(fm: FragmentManager?) :
     FragmentPagerAdapter(fm!!) {
