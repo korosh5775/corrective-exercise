@@ -21,7 +21,6 @@ class FadeIn : AppCompatActivity() {
                 override fun onTick(millisUntilFinished: Long) {}
 
                 override fun onFinish() {
-                    //set the new Content of your activity
                     val shared = getSharedPreferences("Prefs", Context.MODE_PRIVATE)
                     val editor = shared.edit()
                     val isFirstRun = shared.getBoolean("FIRSTRUN", true)
@@ -29,7 +28,6 @@ class FadeIn : AppCompatActivity() {
 
 
                         startActivity(Intent(this@FadeIn, SetLanguage::class.java))
-                        // Code to run once
                         editor.putBoolean("FIRSTRUN", false)
                         editor.apply()
                     }else{
