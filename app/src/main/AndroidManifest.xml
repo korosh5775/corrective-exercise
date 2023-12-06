@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bidemajnoon.eslahi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4150165940268083~2116808553" />
+
+        <activity android:name=".Bmr" />
+        <activity android:name=".About" />
+        <activity android:name=".fehrest.garddanekaj.Test" />
+        <activity android:name=".fehrest.garddanekaj.Ellat" />
+        <activity android:name=".fehrest.garddanekaj.Narmesh" />
+        <activity android:name=".fehrest.chakoshi.Test" />
+        <activity android:name=".fehrest.chakoshi.Ellat" />
+        <activity android:name=".fehrest.chakoshi.Narmesh" />
+        <activity android:name=".fehrest.changali.Test" />
+        <activity android:name=".fehrest.changali.Ellat" />
+        <activity android:name=".fehrest.changali.Narmesh" />
+        <activity android:name=".fehrest.kafegod.Test" />
+        <activity android:name=".fehrest.kafegod.Ellat" />
+        <activity android:name=".fehrest.kafegod.Narmesh" />
+        <activity android:name=".fehrest.kafesaf.Test" />
+        <activity android:name=".fehrest.kafesaf.Ellat" />
+        <activity android:name=".fehrest.kafesaf.Narmesh" />
+        <activity android:name=".fehrest.lagan.Test" />
+        <activity android:name=".fehrest.lagan.Ellat" />
+        <activity android:name=".fehrest.lagan.Narmesh" />
+        <activity android:name=".fehrest.payeparantezi.Test" />
+        <activity android:name=".fehrest.payeparantezi.Ellat" />
+        <activity android:name=".fehrest.payeparantezi.Narmesh" />
+        <activity android:name=".fehrest.payex.Test" />
+        <activity android:name=".fehrest.payex.Ellat" />
+        <activity android:name=".fehrest.payex.Narmesh" />
+        <activity android:name=".fehrest.poshtegerd.Test" />
+        <activity android:name=".fehrest.poshtegerd.Ellat" />
+        <activity android:name=".fehrest.poshtegerd.Narmesh" />
+        <activity android:name=".fehrest.poshtegod.Test" />
+        <activity android:name=".fehrest.poshtegod.Ellat" />
+        <activity android:name=".fehrest.poshtegod.Narmesh" />
+        <activity android:name=".fehrest.poshtekaj.Test" />
+        <activity android:name=".fehrest.poshtekaj.Ellat" />
+        <activity android:name=".fehrest.poshtekaj.Narmesh" />
+        <activity android:name=".fehrest.sarbejelo.Test" />
+        <activity android:name=".fehrest.sarbejelo.Ellat" />
+        <activity android:name=".fehrest.sarbejelo.Narmesh" />
+        <activity android:name=".fehrest.shane.Test" />
+        <activity android:name=".fehrest.shane.Ellat" />
+        <activity android:name=".fehrest.shane.Narmesh" />
+        <activity android:name=".fehrest.shast.Test" />
+        <activity android:name=".fehrest.shast.Ellat" />
+        <activity android:name=".fehrest.shast.Narmesh" />
+        <activity android:name=".fehrest.kafesaf.KafeSaf" />
+        <activity android:name=".fehrest.kafegod.KafeGod" />
+        <activity android:name=".fehrest.shast.Shast" />
+        <activity android:name=".fehrest.shane.Shane" />
+        <activity android:name=".fehrest.lagan.Lagan" />
+        <activity android:name=".fehrest.garddanekaj.GardaneKaj" />
+        <activity android:name=".fehrest.sarbejelo.SarBeJelo" />
+        <activity android:name=".fehrest.poshtekaj.PoshteKaj" />
+        <activity android:name=".fehrest.payeparantezi.PayeParantezi" />
+        <activity android:name=".fehrest.payex.PayeX" />
+        <activity android:name=".fehrest.poshtegod.PoshteGod" />
+        <activity android:name=".fehrest.poshtegerd.PoshteGerd" />
+        <activity android:name=".fehrest.changali.Changali" />
+        <activity android:name=".fehrest.chakoshi.Chakoshi" />
+        <activity android:name=".Bmi" />
+        <activity android:name=".SetLanguage" />
+        <activity android:name=".FadeIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fehrest" />
+        <activity android:name=".Best_activity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

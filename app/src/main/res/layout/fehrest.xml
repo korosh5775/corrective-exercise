@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poshte_gerd_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/paye_x_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/poshte_god_btn"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/poshte_gerd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/poshte_gerd"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poshte_god_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/paye_parantezi_btn"
+            app:layout_constraintEnd_toStartOf="@+id/poshte_gerd_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/poshte_god" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/poshte_god"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/paye_x_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/poshte_kaj_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/paye_parantezi_btn"
+            app:layout_constraintTop_toBottomOf="@+id/poshte_gerd_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/paye_x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/paye_x"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/paye_parantezi_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/sar_be_jelo_btn"
+            app:layout_constraintEnd_toStartOf="@+id/paye_x_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poshte_god_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/paye_parantezi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/paye_parantezi"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poshte_kaj_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/gardane_kaj_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sar_be_jelo_btn"
+            app:layout_constraintTop_toBottomOf="@+id/paye_x_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/poshte_kaj" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/poshte_kaj"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sar_be_jelo_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/lagan_btn"
+            app:layout_constraintEnd_toStartOf="@+id/poshte_kaj_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paye_parantezi_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/sarbejelo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/sarbejelo"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gardane_kaj_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/shane_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lagan_btn"
+            app:layout_constraintTop_toBottomOf="@+id/poshte_kaj_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/gardankaj" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/gardane_kaj"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lagan_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/shast_btn"
+            app:layout_constraintEnd_toStartOf="@+id/gardane_kaj_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sar_be_jelo_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/lagan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/lagan"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!--end-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shane_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/kafe_god_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shast_btn"
+            app:layout_constraintTop_toBottomOf="@+id/gardane_kaj_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/shane" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/shane"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shast_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/kafe_saf_btn"
+            app:layout_constraintEnd_toStartOf="@+id/shane_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lagan_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/shast" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/shast"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kafe_god_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kafe_saf_btn"
+            app:layout_constraintTop_toBottomOf="@+id/shane_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/payegod" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/paye_god"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kafe_saf_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/kafe_god_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shast_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/payesaf" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/paye_saf"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!--end-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/changali_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chakoshi_btn"
+            app:layout_constraintTop_toBottomOf="@+id/kafe_god_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/changali" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/changali"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chakoshi_btn"
+            android:layout_width="145dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/changali_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kafe_saf_btn">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/chakoshi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="@string/chakoshi"
+                android:textColor="#000000"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

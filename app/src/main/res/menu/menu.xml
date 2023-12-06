@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_connect_us" android:title="@string/connect_us"/>
+    <item android:id="@+id/item_language" android:title="@string/choose_language"/>
+    <item android:id="@+id/item_close" android:title="@string/exit"/>
+</menu>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg2"
+    tools:context=".Bmr">
+
+
+    <!--end of sex-->
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sex"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/male"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:hint="@string/weight_kg"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/TIL"
+        app:hintTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/height1"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <EditText
+            android:id="@+id/weight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- end of weght -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/height1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="start"
+        android:hint="@string/height_m"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/TIL"
+        app:hintTextColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/weight1"
+        app:layout_constraintEnd_toStartOf="@+id/weight1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weight1">
+
+        <EditText
+            android:id="@+id/height2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- end of height -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/age1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:hint="@string/age"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/TIL"
+        app:hintTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/height1"
+        app:layout_constraintStart_toStartOf="@+id/height1"
+        app:layout_constraintTop_toBottomOf="@+id/weight1">
+
+        <EditText
+            android:id="@+id/age2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/resault"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age1" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectsngle"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/age1"
+        app:layout_constraintEnd_toEndOf="@+id/weight1"
+        app:layout_constraintStart_toStartOf="@+id/weight1"
+        app:layout_constraintTop_toTopOf="@+id/age1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/female"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/male"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/male"
+        app:layout_constraintTop_toTopOf="@+id/male"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--end of age -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
