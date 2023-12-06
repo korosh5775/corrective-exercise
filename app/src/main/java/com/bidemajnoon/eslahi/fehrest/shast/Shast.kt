@@ -16,10 +16,10 @@ class Shast : AppCompatActivity() {
         lateinit var txt : TextView
 
         img = findViewById(R.id.imageView)
-        img.setImageResource(R.drawable.shast)//it must to change
+        img.setImageResource(R.drawable.shast)
 
         txt = findViewById(R.id.textView)
-        txt.setText(R.string.areze_shast)//it must to change
+        txt.setText(R.string.areze_shast)
 
         lateinit var  ellatbtn : Button
         ellatbtn =findViewById(R.id.ellat)
