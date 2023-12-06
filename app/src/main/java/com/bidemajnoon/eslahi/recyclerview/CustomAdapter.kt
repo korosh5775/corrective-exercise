@@ -19,8 +19,6 @@ public class CustomAdapter(
     RecyclerView.Adapter<CustomAdapter.MyViewHolder>() {
 
 
-    //define Constructor
-
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -52,7 +50,6 @@ public class CustomAdapter(
 
 
     inner class MyViewHolder(view: View ) : RecyclerView.ViewHolder(view) {
-        /*var videosample: VideoView*/
         var gifsample : ImageView
         init {
             gifsample = view.findViewById(R.id.gif) as ImageView
@@ -63,13 +60,8 @@ public class CustomAdapter(
 
 
         fun bind(item: DataModel, listener: OnItemClickListener ) {
-            /*gifsample.setImageResource(item.gif1)*/
 
             Glide.with(applicationContext).load(item.gif1).into(gifsample)
-            /*videosample.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + item.video1))
-            videosample.start()
-            videosample.setOnCompletionListener { videosample.start() }
-            videosample.setOnClickListener { videosample.start() }*/
             itemView.setOnClickListener { listener.onItemClick(item) }
         }
     }
