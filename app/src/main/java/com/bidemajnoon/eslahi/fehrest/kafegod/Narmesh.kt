@@ -26,29 +26,11 @@ class Narmesh : AppCompatActivity() {
         narmeshs.add(DataModel("https://uupload.ir/files/6vnp_kafegod3.gif"))
         narmeshs.add(DataModel("https://uupload.ir/files/e8ui_kafegod4.gif"))
         narmeshs.add(DataModel("https://uupload.ir/files/dkaf_kafegod5.gif"))
-       /* narmeshs.add(DataModel(R.raw.kafegod2.toString()))
-        narmeshs.add(DataModel(R.raw.kafegod3.toString()))
-        narmeshs.add(DataModel(R.raw.kafegod4.toString()))
-        narmeshs.add(DataModel(R.raw.kafegod5.toString()))*/
-
 
 
 
         recy.setAdapter(CustomAdapter(packageName, applicationContext, numbers = ArrayList(narmeshs), listener =object : CustomAdapter.OnItemClickListener {
             override fun onItemClick(guide: DataModel) {
-                /*when(guide){//here I can set Items to click
-                    guids[0]->{
-                        val intent = Intent(applicationContext ,GuideTarikhaneh::class.java)
-                        startActivity(intent)
-                    }
-                    guids[1]->{
-                        Toast.makeText(applicationContext , "this is item number 2" , Toast.LENGTH_LONG).show()
-                    }
-                    guids[2]->{
-                        Toast.makeText(applicationContext , "this is item number 3" , Toast.LENGTH_LONG).show()
-                    }
-                }*/
-
 
             }
         }))
