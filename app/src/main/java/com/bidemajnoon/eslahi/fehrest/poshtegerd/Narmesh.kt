@@ -37,24 +37,6 @@ class Narmesh : AppCompatActivity() {
 
         recy.setAdapter(CustomAdapter(packageName, applicationContext, numbers = ArrayList(narmeshs), listener =object : CustomAdapter.OnItemClickListener {
             override fun onItemClick(guide: DataModel) {
-               /* when(guide){//here I can set Items to click
-                   *//* narmeshs[0]->{
-
-                    }
-                    narmeshs[1]->{
-
-                    }
-                    narmeshs[2]->{
-
-                    }
-                    narmeshs[3]->{
-
-                    }*//*
-
-
-
-                }*/
-
 
             }
         }))
