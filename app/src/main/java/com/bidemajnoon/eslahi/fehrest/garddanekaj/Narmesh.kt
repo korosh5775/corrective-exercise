@@ -31,18 +31,6 @@ class Narmesh : AppCompatActivity() {
 
         recy.setAdapter(CustomAdapter(packageName, applicationContext, numbers = ArrayList(narmeshs), listener =object : CustomAdapter.OnItemClickListener {
             override fun onItemClick(guide: DataModel) {
-                /*when(guide){//here I can set Items to click
-                    guids[0]->{
-                        val intent = Intent(applicationContext ,GuideTarikhaneh::class.java)
-                        startActivity(intent)
-                    }
-                    guids[1]->{
-                        Toast.makeText(applicationContext , "this is item number 2" , Toast.LENGTH_LONG).show()
-                    }
-                    guids[2]->{
-                        Toast.makeText(applicationContext , "this is item number 3" , Toast.LENGTH_LONG).show()
-                    }
-                }*/
 
 
             }
